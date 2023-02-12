@@ -69,4 +69,6 @@ Zealandia_list = [
             "維生素B6、維生素A醋酸鹽、生物素、維生素B12補充劑、碘酸鈣、葉酸、維生素D3。"}
 ]
 
-mycol.insert_many(Zealandia_list)
+myquery = {"品牌":"Feline Natural 鮮嫩"}
+new = {"$set": {"品牌": "Zealandia 狂野天廚"}}
+mycol.update_many(myquery, new)
