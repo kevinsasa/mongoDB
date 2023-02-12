@@ -1,6 +1,6 @@
 import pymongo
 
-client = pymongo.MongoClient("mongodb+srv://catfood_db:passwordtest@cluster0.rvn03z4.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient("mongodb+srv://catfood_db:<password>@cluster0.rvn03z4.mongodb.net/?retryWrites=true&w=majority")
 mydb = client["catfood_db"]
 mycol = mydb["catfood_db"]
 
