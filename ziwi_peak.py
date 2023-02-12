@@ -58,4 +58,6 @@ ziwi_peak_list = [
             "蛋胺酸、維生素(氯化膽鹼、維生素E、維生素B1、維生素B3、維生素 B6、維生素B2、維生素D3、葉酸) 、有機海帶、羊骨、牛磺酸"}
 ]
 
-mycol.insert_many(ziwi_peak_list)
+my_find = mycol.find({"_id": {"$regex":"^1"}})
+for x in my_find:
+    print(x)
